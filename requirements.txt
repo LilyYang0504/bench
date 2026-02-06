@@ -1,6 +1,7 @@
 transformers
 huggingface_hub
 hf_xet
+qwen_vl_utils
 pyyaml
 numpy
 pillow
