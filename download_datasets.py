@@ -18,10 +18,10 @@ def download_dataset(repo_name: str, local_dir: Path):
             local_dir=str(local_dir),
             ignore_patterns=[".gitattributes"]
         )
-        print(f"{Fore.GREEN}Datasets downloaded successfully")
+        print(f"\n{Fore.GREEN}Datasets downloaded successfully")
         return True
     except Exception as e:
-        print(f"{Fore.RED}ERROR: Failed to download datasets")
+        print(f"\n{Fore.RED}ERROR: Failed to download datasets")
         print(f"  Details: {e}")
         return False
 
