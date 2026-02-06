@@ -2,5 +2,3 @@
 # example:
 # Qwen/Qwen-VL-8B-Instruct
 # # Qwen/Qwen3-VL-235B-A22B-Instruct
-ByteDance/Sa2VA-Qwen3-VL-2B
-OpenGVLab/InternVL3_5-1B
