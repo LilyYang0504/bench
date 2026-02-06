@@ -1,0 +1,12 @@
+transformers
+huggingface_hub
+hf_xet
+pyyaml
+numpy
+pillow
+tqdm
+scipy
+colorama
+peft
+einops
+timm
