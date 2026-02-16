@@ -216,7 +216,10 @@ def _run_llava_onevision_qa(model, processor, frame_paths, question):
     )
     inputs = inputs.to(model.device)
     
-    generated_ids = model.generate(**inputs, max_new_tokens=1024)
+    
+    generate_kwargs = {k: v for k, v in inputs.items() if k not in ("second_per_grid_ts",)}
+    
+    generated_ids = model.generate(**generate_kwargs, max_new_tokens=1024)
     generated_ids_trimmed = [
         out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
