@@ -49,7 +49,7 @@
 ## Project Structure
 
 ```
-bench/
+dyn-bench/
 ├── conf/
 │   ├── config.yaml
 │   └── model_list.txt
